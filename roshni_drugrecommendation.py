@@ -24,7 +24,7 @@ df = df.reset_index()
 df['soup'] = df['review']+" "+df['condition']
 df.dropna(axis=0, inplace=True)
 
-from sklearn.feature_extraction.text import HashingVectorizer,TfidfVectorizer, CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 # Vectorizes words to numbers and builds a sparse matrix
 count = CountVectorizer(analyzer='word',ngram_range=(1, 2),min_df=0, stop_words='english')
 count_matrix = count.fit_transform(df['soup'])
