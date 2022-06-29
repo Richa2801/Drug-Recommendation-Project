@@ -10,7 +10,7 @@ Original file is located at
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv('C:/Users/admin/Downloads/PythonTutorials/clean_drugs.csv')
+df = pd.read_csv('clean_drugs.csv')
 
 
 # Content Based
